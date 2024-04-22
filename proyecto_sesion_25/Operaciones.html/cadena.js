@@ -13,7 +13,7 @@ alert(cadena)
   let decenas = cadena [cadena.length-2];
   
   alert("unidades: " + unidades + "\nDecenas: " + decenas);
-  alert("largo cadena: " + cadena.length);
+  alert("largo cadena: " + cadena.length) ;
   
 
 
