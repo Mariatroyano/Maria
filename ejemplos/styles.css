@@ -1,0 +1,24 @@
+#titulo{
+    color:orange;
+}
+
+.color{
+    color: white;
+}
+
+button{
+    color: aqua;
+}
+
+.campo_usuario{
+    border-color: aqua;
+    border-radius: 50px;
+}
+.campo_contraseña{
+    border-color: violet;
+    border-radius: 50px;
+}
+
+body{
+    background-image: url("https://concepto.de/wp-content/uploads/2014/08/programacion-2-e1551291144973.jpg");
+}
