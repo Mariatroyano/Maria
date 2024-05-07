@@ -4,7 +4,7 @@ let tarifas= prompt("Ingresar Algunas De Las Siguientes Opciones  Para Mirar Las
 let ingresekilometros= prompt("Ingresar los kilometros:")
 
 let Transporte 
-
+let hola0=''
  switch (tarifas) {
     case 'taxi':
       if (ingresekilometros  <= 5) {
