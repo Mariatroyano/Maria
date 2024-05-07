@@ -1,3 +1,6 @@
+
+
+
 let resultado = ''
 let numeroUsuario =''
 let numeroSecreto =''

@@ -4,14 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juego de Adivinanzas</title>
+    <style>
+        body{
+            background:rgb(87, 75, 75);
+        } 
+        .g{
+            background-color: rgb(233, 207, 207) ;
+            color: rgb(32, 32, 36);
+        }  
+        .m{
+            background-color: rgb(233, 207, 207);
+            color: rgb(32, 32, 36);
+        }
+        ::placeholder{
+            color: black;
+        }
+    </style>
 </head>
 <body>
     <script src="contidUnidades.js"></script>
-    <h1>Conversor de Unidades</h1>
+    <h1 class="g">Conversor de Unidades</h1>
     <p>Ingrese <b>1</b> para pasar de Celsius a Fahrenheit <br> Ingrese <b>2</b> para pasar de Fahrenheit a Celsius <br>Ingrese <b>3</b> para pasar de Kilometros a Millas <br>Ingrese <b>4</b> para pasar de Millas a Kilometros</p>
-    <input type="number" id="conversor" required placeholder="Ingrese una operacion">
-    <button onclick="temperatura()">calcula</button><br>
-    <input type="number" id="numUsuario" required placeholder="Ingrese el numero a convertir">
+    <input class="m" type="number" id="conversor" required placeholder="Ingrese una operacion">
+    <button class="m" onclick="temperatura()">calcula</button><br>
+    <input class="m" type = "number" id="numUsuario" required placeholder="Ingrese el numero a convertir">
     <p><span id="resultadoTotal"></span></p>
 </body> 
 </html>
