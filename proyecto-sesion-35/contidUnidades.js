@@ -3,7 +3,7 @@ let resultadoTotal
 let numUsuario = ''
 let operacion='10'
 function temperatura(){
-    operacion = document.getElementById("conversor").innerHTML
+    operacion = document.getElementById("conversor").value
     console.log(operacion)
      numUsuario = document.getElementById("numUsuario").value
 
