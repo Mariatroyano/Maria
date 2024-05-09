@@ -3,7 +3,8 @@
 }
 
 .color{
-    color: white;
+    color: rgb(22, 19, 19);
+    font-family: maria;
 }
 
 button{
@@ -19,6 +20,11 @@ button{
     border-radius: 50px;
 }
 
-body{
+/* body{
     background-image: url("https://concepto.de/wp-content/uploads/2014/08/programacion-2-e1551291144973.jpg");
+} */
+@font-face {
+    font-family: maria;
+    src: url(../Anime.otf);
+    font-weight: 100;
 }
