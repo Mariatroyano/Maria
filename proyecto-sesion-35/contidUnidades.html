@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Adivinanzas</title>
+    <link rel="stylesheet" href="contidUnidades.css">
+
+</head>
+
+<body class="body">
+    <div class="principal">
+        <script src="contidUnidades.js"></script>
+        <h1 class="conversor">Conversor de Unidades</h1>
+        <p class="m">Ingrese <b>1</b> para pasar de Celsius a Fahrenheit <br> Ingrese <b>2</b> para pasar de Fahrenheit
+            a Celsius <br>Ingrese <b>3</b> para pasar de Kilometros a Millas <br>Ingrese <b>4</b> para pasar de Millas a
+            Kilometros</p>
+        <div class="inputs">
+            <input class="l" type="number" id="conversor" required placeholder="Ingrese una operacion">
+            <br>
+            <br>
+            <input class="n" type="number" id="numUsuario" required placeholder="Ingrese el numero a convertir">
+            <br>
+            <br>
+        <button class="k" onclick=temperatura()>calcula</button><br>
+
+        </div>
+        <br>
+        <p class="resultado"><span id="resultadoTotal"></span></p>
+    </div>
+</body>
+
+</html>
