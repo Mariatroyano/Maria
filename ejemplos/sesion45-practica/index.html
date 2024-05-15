@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="multiplicasion.css">
+</head>
+
+<body>
+    <div>
+        <h1>Modulo 1</h1>
+        <input id="Numero1" type="number">
+        <span id="operador"></span>
+        <input id="Numero2" type="number">
+        <span>=</span>
+        <span id="resul">resultado</span>
+        <br>
+        <button type="button" onclick="calcular('sumar')">sumar</button>
+        <button type="button" onclick="calcular('restar')">restar </button>
+        <button type="button" onclick="calcular(`multiplicar`)">multiplicar</button>
+        <button type="button" onclick="calcular(`dividir`)">dividir </button>
+        <button type="button" onclick="calcular('potencia')">potencia</button>
+        <button type="button" onclick="calcular('raiz')">raiz</button>
+    </div>
+
+
+    <div>
+        <h1>Modulo 2</h1>
+        <input id="Numero" type="number">
+        <span id="operador2"></span>
+        <span>=</span>
+        <span id="resul2">resultado</span>
+        <br>
+        <button type="button" onclick="calcular2('redondear')">redondear</button>
+        <button type="button" onclick="calcular2('valor')">valor </button>
+    </div>
+
+    <script src="script.js" type="module"></script>
+
+</body>
+
+</html>

@@ -5,8 +5,8 @@ let operacion='10'
 function temperatura(){
     operacion = document.getElementById("conversor").value
     console.log(operacion)
-     numUsuario = document.getElementById("numUsuario").value
-
+    numUsuario = document.getElementById("numUsuario").value
+   
     switch (operacion) {
       case "1"://C a F
            resultadoTotal = (`De Celsius a Fahrenheit es ${((numUsuario * 9/5) + 32 ).toFixed(2)}`)
@@ -24,4 +24,6 @@ function temperatura(){
            resultadoTotal = "Operación no válida";
     }
     document.getElementById("resultadoTotal").innerText = resultadoTotal;
+   // numUsuario = document.getElementById("resultadoTotal1").innerHTML = '<h6>' + resultadoTotal+'</h6>'
+
   }
