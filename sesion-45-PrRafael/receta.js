@@ -3,7 +3,7 @@ let receta = [
         "id": "1",
         nombreReceta: " ",
         ingredientes: "",
-        cantidad: ""
+        cantidad: "",
          preparacion: "",
 
     },
@@ -11,7 +11,7 @@ let receta = [
         "id": "1",
         nombreReceta: " ",
         ingredientes: "",
-        cantidad: ""
+        cantidad: "",
          preparacion: "",
 
 
@@ -21,7 +21,7 @@ let receta = [
         "id": "1",
         nombreReceta: " ",
         ingredientes: "",
-        cantidad: ""
+        cantidad: "",
          preparacion: "",
 
 
@@ -30,7 +30,7 @@ let receta = [
         "id": "1",
         nombreReceta: " ",
         ingredientes: "",
-        cantidad: ""
+        cantidad: "",
          preparacion: "",
 
     },
@@ -40,15 +40,15 @@ let nombreReceta
 let preparacion
 let ingre
 
-async function MostrarTodosReceta(receta) {
-    try {
+// async function MostrarTodosReceta(receta) {
+//     try {
 
-        await esperar(())
-        let miReceta = libros.forEach(item => console.log(nombreReceta: ${ item.nombreReceta }\nId: 
-            ${ item.id }\nIngredientes: 
-            ${ item.ingredientes }\nCantidad: ${ item.cantidad }\npreparacion: 
-            ${ item.preparacion }\n))
+//         await esperar()
+//         let miReceta = libros.forEach(item => console.log(`nombreReceta: ${ item.nombreReceta }\nId: 
+//             ${ item.id }\nIngredientes: 
+//             ${ item.ingredientes }\nCantidad: ${ item.cantidad }\npreparacion: 
+//             ${ item.preparacion }\n`))
 
 
-    }
-}
+//     }
+// }
