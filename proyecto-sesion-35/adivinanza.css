@@ -1,0 +1,12 @@
+.adivinar{
+background: rgb(162, 255, 0);
+border: 2px dotted rgb(0, 0, 0);
+font-family:cursive;
+text-align: center;
+}
+.body{
+background: rgb(0, 0, 0);
+}
+.bodyg{
+    background: rgb(202, 32, 32);
+    }

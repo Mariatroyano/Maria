@@ -1,0 +1,39 @@
+.body{
+    background: rgb(111, 133, 121);
+    margin-left: 400px;
+
+}
+.principal{
+    background: rgb(162, 172, 166);
+    width: 380px;
+    border-radius: 22px;
+    
+}
+.inputs{
+    text-align: center;
+    
+}
+.conversor{
+    text-align: center;
+    color: rgb(60, 71, 71);
+    background: rgb(137, 168, 106);
+    border: 2px dotted rgb(0, 0, 0)
+    
+ 
+}
+.m{
+    font-family:cursive;
+    text-align: center;
+}
+.k{
+    color: rgb(8, 7, 7);
+    border-color: rgb(22, 22, 28);
+}
+
+    ::placeholder{color: rgb(9, 8, 8) ; }
+
+.resultado{
+    background: rgb(18, 105, 24);
+    border-radius: 10px;
+    text-align: center;
+}
