@@ -8,24 +8,25 @@ body{
 .h{
   
     color: rgb(239, 239, 232);
- 
-    
+    font-family: cursive;
 }
+    
+
 .m{
-    border-radius: 40;
+    border-radius: 4200;
+    font-family: cursive;
 }
+
 .o{
-    border-radius: 60px;
+    border-radius: 20px;
     font-family: cursive;
-    color: black;
-    
+    color: black;  
 }
-.k{
+.p{
+    color: rgb(239, 239, 232);
     font-family: cursive;
 }
-.j{
-    color: rgb(14, 11, 6);
-}
+
 
 
 

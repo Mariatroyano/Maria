@@ -53,7 +53,7 @@
 
 // // //ASIGNA EL EVENTO CLICK AL BOTON
 // // document.getElementById("addButton").addEventListener("click", addRecet);
-let recetas = [];
+let recetas = [];//aqui comenzamos a declrar la variables
 
 
 window.onload = function() {
@@ -65,7 +65,7 @@ window.onload = function() {
 
 function AgregarReceta() {
     let receta = {
-        nombre: "",
+        nombre: "",//aqui comienzo hacer una funcion para hacer un array tipo jhon
         preparacion: "",
         ingredientes: {
             nombre: "",
@@ -77,8 +77,8 @@ function AgregarReceta() {
     receta.preparacion = document.getElementById("preparacionReceta").value;
     receta.ingredientes.nombre = document.getElementById("nombreIngrediente").value;
     receta.ingredientes.cantidad = document.getElementById("cantidadIngrediente").value;
-
-    recetas.push(receta);
+//en estos casos es donde comienzo a llamar cada ad de mi html con los nombres que necesito
+    recetas.push(receta);//para que me agregue
 
     let listaRecetas = document.getElementById("listaRecetas");
     let datosReceta = document.createElement("li");
