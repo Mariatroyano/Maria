@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,24 +11,106 @@
 <body>
 
 
-    <h1 class="m">Mi Receta</h1>
-    <script src="receta.js"></script>
-    <P class="k">Nombre de receta</P>
-    <input id="receta" type="receta">
+    <h1 class="m">Mini aplicación de recetario</h1>
+    <P class="p">Nombre de receta</P id="nombreReceta">
+     <input class="h" type="text" id="nameRecet" required placeholder="Nombre Receta">
     <p class="l">Descripcion de la receta</p>
-    <input id="receta" type="receta" required placeholder="Preparacion">
+    <input class="h" id="preparacionReceta" required placeholder="Preparacion">
     <br>
     <br>
-    <input type="ingredientes" type="ingredientes" required placeholder="ingredientes">
-    <input type="cantidad" type="cantidad" required placeholder="cantidad">
+    <input class="h" id="ingredientesReceta" required placeholder="ingredientes">
+    <input class="h" id="cantidad" required placeholder="cantidad">
     <br>
     <br>
-    <button type="button" onclick="calcular('add Recipe')">add Recipe</button>
+    <button class="h" id="addButton">Agregar receta</button>
+    <button id="buttonContainer" onclick="agregarReceta">Agregar Ingredientes</button>
+    <ul id="itemListReceta">reseta</ul>
+    <script src="receta.js"></script>
+
+</body>
+ <!-- -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="receta.css">
+    <script src="receta.js"></script>
+</head>
+
+<body>
+    <p class="h">Nombre:</p>
+    <input class="m" id="nombreReceta" type="text"></input>
+    <p class="h">Preparación:</p>
+    <textarea class="o"    id="preparacionReceta" name="textarea" rows="5" cols="70"></textarea>
+    <br>
+    <span class="h">Ingrediente: </span></span><input class="h" id="nombreIngrediente" type="text"></input>
+    <span class="h">Cantidad: </span><input class="h"   id="cantidadIngrediente" type="text"></input>
+    <br>
+    <br></br>
+
+    <div id="listaRecetas"></div>
+    <div id="listaPreparacion"></div>
+    <div id="listaIngredientes"></div>
+    <div id="listaCantidad"></div>
+    <br></br>
+    <button type="button" onclick="AgregarReceta()">Agregar</button>
+    <button type="button" onclick="EliminarReceta()">Eliminar</button>
 
 </body>
 
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetario</title>
+
+    <link rel="stylesheet" href="stilo.css">
+
+</head>
+
+<body>
+    <div class="agregarRecetas">
+        <h2>RECETA COMIDAS</h2>
+        <form id="formaReceta">
+            <label for="nombreReceta">Nombre de la receta:</label>
+            <br>
+            <input type="text" id="nombreReceta" placeholder="¿Que Vas A Preparar?" required>
+            <br>
+            <br>
+            <div class="listaIngredientes">
+                <div class="ingredientes">
+                    <input type="text" class="nombreIngrediente" placeholder="Ingrediente" required>
+                    <input type="text" class="cantidadIngrediente" placeholder="Cantidad" required>
+                </div>
+            </div>
+            <br>
+            <br>
+            <label for="preparacionReceta" id="preparacion">Preparación:</label>
+            <br>
+            <textarea id="preparacionReceta" placeholder="¿Como se prepara?" required></textarea>
+            <br>
+            <br>
+            <button type="button" id="agregarIngrediente">Agregar Otro Ingrediente</button>
+            <button type="submit">Guardar Receta</button>
 
 
+        </form>
+        <hr>
+        <div id="recipe-list"></div>
+    </div>
+    <script src="receta.js"></script>
+</body>
 
 </html>
 
+
+
+
+
+ --> -->

@@ -1,44 +1,37 @@
 
 
 body{
-    background-image: url(https://img.freepik.com/foto-gratis/vista-superior-diferentes-tipos-pasta-como-ziti-rotini-tagliatelle-otros-mantequilla-derretida-ajo-sal-pimienta-tomate-salsa-tomate-alrededor-bloc-notas-superficie-madera-espacio-copia_141793-10525.jpg?size=626&ext=jpg&ga=GA1.1.1788068356.1715731200&semt=ais_user)
-    
+    background-image: url(https://img.freepik.com/foto-gratis/deliciosa-comida-verduras-ensalada-mesa_23-2148132011.jpg);
+    text-align: center;
+}
 
-}
-.l{
-    font-family: cursive;
-    text-align: center;
-}
-    
-
-.input{
-    text-align: center;
-    
-}
-.k{
-    font-family: cursive;
-}
-.conversor{
-    text-align: center;
-    color: rgb(60, 71, 71);
-    background: rgb(137, 168, 106);
-    border: 2px dotted rgb(0, 0, 0)
-    
+.h{
+  
+    color: rgb(239, 239, 232);
  
+    
 }
 .m{
-    font-family:cursive;
-    text-align: center;
+    border-radius: 40;
+}
+.o{
+    border-radius: 60px;
+    font-family: cursive;
+    color: black;
+    
 }
 .k{
-    color: rgb(8, 7, 7);
-    border-color: rgb(22, 22, 28);
+    font-family: cursive;
+}
+.j{
+    color: rgb(14, 11, 6);
 }
 
-    ::placeholder{color: rgb(9, 8, 8) ; }
 
-.resultado{
-    background: rgb(18, 105, 24);
-    border-radius: 10px;
-    text-align: center;
-}
+
+  
+
+
+ 
+
+
