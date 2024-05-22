@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>titulo !!!</title>
+    <!-- <style>
+    body { font-family: Arial, sans-serif; }
+    .container { margin: 20px; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { border: 1px solid #ddd; padding: 8px; }
+    th { background-color: #f2f2f2; }
+  </style> -->
+
+    <style>
+        .animated-button {
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .animated-button:hover {
+            background-color: #00b354;
+            transform: scale(1.1);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Formulario de Ejemplo</h1>
+
+        <form action="/submit" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="primer nombre" required><br><br>
+            <label for="second_name"> Apellido </label>
+            <input type="text" id="second_name" name="Apellido" placeholder="Apellido"><br> <br>
+            <label for="email">Correo Electronico:</label>
+            <input type="email" id="mail" name="correo" placeholder="correo electronico">
+            <br><br>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" placeholder="edad" min="0" max="101">
+            <br>
+            <br>
+            <label for="foto">Foto:</label>
+            <input type="file" id="foto" name="foto" placeholder="foto">
+            <br>
+            <br>
+            <label for="genero">Genero:</label>
+            <select type="text">
+                <option> Masculino </option>
+                <option> Femenino </option>
+                <option selected> Otros </option>
+                <option disabled> Prefiero no decirlo </option>
+            </select>
+            <br>
+            <br>

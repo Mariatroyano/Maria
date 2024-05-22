@@ -65,7 +65,7 @@ window.onload = function() {
 
 function AgregarReceta() {
     let receta = {
-        nombre: "",//aqui comienzo hacer una funcion para hacer un array tipo jhon
+        nombre: "",//aqui comienzo hacer una funcion para hacer un array tipo jhs
         preparacion: "",
         ingredientes: {
             nombre: "",

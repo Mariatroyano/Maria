@@ -1,4 +1,4 @@
-import { sumar, restar, multiplicar, dividir, potencia, raiz } from "./mathOperations.js";
+import { sumar, restar, multiplicar, dividir, potencia, raiz } from "../../mathOperations.js";
 
 import { redondeo, valor } from "./utilities.js";
 
