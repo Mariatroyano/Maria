@@ -1,0 +1,31 @@
+body{
+    background-image: url("https://blog.uber-cdn.com/cdn-cgi/image/width=2160,quality=80,onerror=redirect,format=auto/wp-content/uploads/2019/02/Paisajes-conquistadores-7-lugares-bonitos-en-Medell%C3%ADn-que-te-encantar%C3%A1n-1024x512.png")
+}
+
+h1{
+    text-align: center;
+}
+header{
+    background: yellow;
+    width: 100%;
+    padding: 0;
+}
+
+li{
+    display: inline;
+    padding: 20px;
+}
+.p{
+    font-family: cursive;
+}
+.k{
+    font-size: 30px;
+    font-family: cursive;
+    margin-left: 500px;
+    color: rgb(15, 15, 14);
+}
+.l{
+    font-size: 50px;
+    font-family: cursive
+  
+}
