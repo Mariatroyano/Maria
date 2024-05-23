@@ -1,0 +1,35 @@
+body{
+    color: rgb(20, 20, 20);
+}
+
+.m{
+    text-align: center;
+}
+.k{
+    vertical-align: middle;
+    width: 50;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.avata{
+    vertical-align: middle;
+    width: 50px;
+    height: 50%;
+    border-radius: 60%;
+}
+.y{
+    text-align: center;
+}
+.t{
+    background-color: rgb(189, 185, 185);
+     height: 30px;
+     width: 100%;
+     text-align: center;
+}
+.L{
+    background-color: rgb(185, 180, 180);
+     height: 30px;
+     width: 100%;
+     text-align: center;
+}
