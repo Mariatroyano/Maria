@@ -1,13 +1,13 @@
 
 
 body{
-    background-image: url(https://img.freepik.com/foto-gratis/deliciosa-comida-verduras-ensalada-mesa_23-2148132011.jpg);
+   color: rgb(18, 19, 19);
     text-align: center;
 }
 
 .h{
   
-    color: rgb(239, 239, 232);
+    color: rgb(20, 20, 19);
     font-family: cursive;
 }
     
@@ -23,7 +23,7 @@ body{
     color: black;  
 }
 .p{
-    color: rgb(239, 239, 232);
+    color: rgb(10, 10, 10);
     font-family: cursive;
 }
 
