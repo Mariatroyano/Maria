@@ -13,10 +13,8 @@ body{
     text-align: center;
 }
 .avata{
-    vertical-align: middle;
-    width: 50px;
-    height: 50%;
-    border-radius: 60%;
+    
+    border-radius: 200px;
 }
 .y{
     text-align: center;
