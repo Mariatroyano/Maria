@@ -1,0 +1,43 @@
+body, html{
+    background-color: rgb(14, 160, 153);
+    margin: 0;/* */
+    padding: 0;/* */
+    box-sizing: border-box;/* */
+    font-family: Arial, Helvetica, sans-serif; /*Aqui donde pongo el tipo de letra que deseo */
+
+}
+
+a{
+
+    text-decoration: none;/* aqui me quita la linea del link*/
+    background-color: rgb(247, 215, 155);
+     height: 40px;/*largo de la imagen */
+     width: 100%;/* ancho de la imagen*/
+     text-align: center;
+}
+
+.imagen{
+   
+    border-radius: 200px;
+    padding: 50px;/* con ested me separa de la margen principal*/
+    margin-left: 25%;
+ 
+}
+nav ul{
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+nav ul li{
+    flex: auto;
+    padding: 10px;
+    background-color: rgb(128, 126, 36);
+    font-size: 20px;  
+    border: 1px solid black;
+    text-align: center;
+}
+nav ul li a{
+    color: black;
+    background-color: rgb(128, 126, 36);
+}

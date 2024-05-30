@@ -12,10 +12,25 @@ img{
     border-radius: 70;
 }
 .row{
-    display: flexbox;
+    display: flex;
     padding: 5px;
     border-radius: 70;
 }
 .imagen{
     border-style: outset;
+}
+/* Media query para pantallas más pequeñas */
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .columna {
+        flex: 1 1 50%; /* Ajusta el tamaño de las columnas al 50% en pantallas más pequeñas */
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .imagen {
+        flex: 1 1 100%; /* Ajusta el tamaño de las columnas al 100% en pantallas muy pequeñas */
+        max-width: 100%;
+    }
 }
