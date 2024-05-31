@@ -1,36 +1,24 @@
-*{
-    box-sizing: border-box;
-}
-body{
-    background-color: rgb(89, 158, 158);
-    margin: 20;
-    padding: 9;
-   
-}
-img{
-    width: 30%;
-    border-radius: 70;
-}
-.row{
-    display: flex;
-    padding: 5px;
-    border-radius: 70;
-}
-.imagen{
-    border-style: outset;
-}
-/* Media query para pantallas más pequeñas */
-/* Media query para pantallas más pequeñas */
-@media screen and (max-width: 768px) {
-    .columna {
-        flex: 1 1 50%; /* Ajusta el tamaño de las columnas al 50% en pantallas más pequeñas */
-        max-width: 50%;
-    }
+body {
+    background-image: url("https://st.depositphotos.com/3008028/3750/i/450/depositphotos_37502259-stock-photo-festive-background-elegant-abstract-background.jpg");
 }
 
-@media screen and (max-width: 480px) {
+.imagen {
+    border-style: outset; /*aqui me le pone una margen a las fotos */
+    width: 100px;
+    /*aqui me lo pone de forma pequeña */
+    margin: 10px 0;
+
+
+
+}
+
+@media (max-width: 700px) {
+
+    /* tamaño de la pantalla*/
     .imagen {
-        flex: 1 1 100%; /* Ajusta el tamaño de las columnas al 100% en pantallas muy pequeñas */
         max-width: 100%;
+        margin: 5px 0;
+        border-radius: 100%;
+        /*cuando se ponga pequeña la pantalla se ponga en radiun*/
     }
 }

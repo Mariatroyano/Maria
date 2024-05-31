@@ -15,14 +15,14 @@
 }
 
 body{
+    background-image: url("https://c8.alamy.com/compes/em6w54/hermoso-par-de-varios-colores-brillantes-de-guacamayas-volando-en-el-cielo-el-plumaje-es-principalmente-scarlet-em6w54.jpg");
     display: flex;
     justify-content: center;
     align-items: center;
     height: 300px;
-    background-color: rgb(14, 17, 201);
     margin: 8;font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     position: absolute;
-    top: 20%;
+    top: 25%;
     left:10%
 
 }

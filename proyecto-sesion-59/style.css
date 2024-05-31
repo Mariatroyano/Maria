@@ -1,43 +1,62 @@
-body, html{
-    background-color: rgb(14, 160, 153);
-    margin: 0;/* */
-    padding: 0;/* */
-    box-sizing: border-box;/* */
-    font-family: Arial, Helvetica, sans-serif; /*Aqui donde pongo el tipo de letra que deseo */
+body,
+html {
+    background-image: url(https://media.istockphoto.com/id/1344939844/es/foto/sosteniendo-a-mano-la-bombilla-virtual-de-dibujo-con-cerebro-sobre-fondo-bokeh-para-una-idea.jpg?s=612x612&w=0&k=20&c=wC07ANO0DkwMHTNS-7kyhbpo1QIT2aehSxTCHX07o4A=);
+    margin: 0;
+    /* */
+
+    box-sizing: border-box;
+    /* */
+    font-family: Arial, Helvetica, sans-serif;
+    /*Aqui donde pongo el tipo de letra que deseo */
+
+
 
 }
 
-a{
+a {
 
-    text-decoration: none;/* aqui me quita la linea del link*/
-    background-color: rgb(247, 215, 155);
-     height: 40px;/*largo de la imagen */
-     width: 100%;/* ancho de la imagen*/
-     text-align: center;
-}
+    text-decoration: none;    /* aqui me quita la linea del link*/
+    height: 40px;   /*largo de la imagen */
+    width: 100%;    /* ancho de la imagen*/
 
-.imagen{
-   
-    border-radius: 200px;
-    padding: 50px;/* con ested me separa de la margen principal*/
-    margin-left: 25%;
  
 }
-nav ul{
-    padding: 10px;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
+
+.imagen {
+
+    border-radius: 200px;/* */
+    padding: 50px; /* con ested me separa de la margen principal*/
+    margin-left: 26%;   /*le centrado de la imagen */
+    width: 200px;
+    height: 200px;
+
+
 }
-nav ul li{
-    flex: auto;
-    padding: 10px;
-    background-color: rgb(128, 126, 36);
-    font-size: 20px;  
-    border: 1px solid black;
-    text-align: center;
+
+nav ul {
+    padding: 10px;/* para que me de un rellenoo de la margen principal a donde tengo la otra linea */
+    list-style: none;   /*aqui me quitan los muntos de la lista */
+    display: flex;/* aqui me lo pone de seguido de ladiro*/
+    flex-wrap: wrap;/* me lo pone de manera abajo cuando lo pongo mas pequeño*/
 }
-nav ul li a{
-    color: black;
-    background-color: rgb(128, 126, 36);
+
+nav ul li {
+    flex: auto;/* me ocupa doto el espacio cuando lo pongo pqueño*/
+    padding: 10px;/* relleno*/
+    background-color: rgb(8, 143, 146);
+    border: 1px solid rgb(210, 204, 204);
+    text-align: center;/* me sentra las palabras que tengo dentro del cuadro*/
+}
+
+nav ul li a {
+    color: rgb(223, 211, 211);
+    background-color: rgb(10, 10, 12);
+}
+
+@media screen and (max-width: 500px) {
+    .imagen {
+        width: 100px;/* aqui le pongo la medida de la imagen cuando semponga pequña*/
+        height: 100px;
+ 
+    }
 }
