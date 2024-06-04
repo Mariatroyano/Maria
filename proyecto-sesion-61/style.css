@@ -1,0 +1,42 @@
+body{
+    background-image: url("https://as2.ftcdn.net/v2/jpg/05/72/52/87/1000_F_572528765_UjRhmFZ75jWEZYEEm4vNnCTaZ9ehPUv0.jpg");
+ 
+  
+}
+ul li{
+    font-family: cursive;
+
+}
+.principal{
+    width: 50%;
+    padding: 10px;
+    background-color: #f0e7ec;
+    text-align: center;
+    border-radius: 70px;
+    box-shadow: 10px 22px ;
+    position: absolute;
+    top: 25%;
+    left:25%
+
+    
+}
+#logo{
+    width: 1px;
+    height: 1px;
+}
+header .principal .logo{
+   
+    justify-content: right;
+
+}
+input{
+    border-radius: 10px;
+    background-color: rgb(235, 230, 234);
+}
+
+button{
+    border-radius: 10px;
+}
+.footer{
+    text-align: center;
+}
