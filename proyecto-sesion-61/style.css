@@ -5,8 +5,12 @@ ul li{
     font-family: cursive;
 
 }
+::placeholder{
+color: black;
+}
+
 .principal{
-    margin: 1px;
+   
     width: 40%;
     padding: 0%;
     background-color: #aaab96;
@@ -20,7 +24,7 @@ ul li{
 
 input{
     height: 50px;
-    width: 300px;
+    width: 200px;
     border-radius: 10px;
     background-color: rgb(235, 230, 234);
 }
