@@ -1,56 +1,53 @@
 body{
-    background-image: url("https://lh3.googleusercontent.com/drive-storage/AJQWtBNdXyG159CX8kX1FTHXVf9641SG1GP5E_fZtMp25wwtYgeT1oTYS3SivH4A6ncRCp8iNTiAErRdfUvOeQ0W3PPe58rqa7MQZsp2hjBG_jsk1Q=w1349-h633");
     margin: 0;
-    font-family: sans-serif;
+    background-image: url(neflix2.jpg);
+    font-family: Arial, sans-serif;
 }
-.gradient{
 
+.bg-gradient{
+    background-image:linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
 }
+
 .header{
     background-color: #141414;
-    display:flex;
-    justify-self:space-around ;
+    display: flex;
+    justify-content: space-around;
     padding: 20px;
 }
+
 .header nav{
     display: flex;
     align-items: center;
 }
+
 .header img{
     width: 100px;
 }
+
 .header nav a{
-
-    color: aliceblue;
+    color: #fff;
     text-decoration: none;
-    margin-right: 30px;
+    margin-right: 20px;
 }
-
-
-.header .logo{
-    width: 100px;
-
-}
-
 
 .header button{
-    background-color: #d81f28;
-    color: beige;
-    border: none;
+    background-color: #d81f26;
+    color: #fff;
+    border:none;
     border-radius: 4px;
     cursor: pointer;
-    padding: 15px;
-   
+    padding: 10px;
 }
+
 .main{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: aliceblue;
-    height: 80vw;
-    flex-direction: column;
-
+    color: #fff;
+    height: 80vh;
+   
 }
+
 .main .container{
     display: flex;
     flex-direction: column;
