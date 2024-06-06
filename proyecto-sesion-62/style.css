@@ -1,0 +1,9 @@
+.backgroundcolorred{
+    background-color: brown;
+}
+.backgroundcolorblue{
+    background-color: rgb(0, 94, 244);
+}
+body{
+    width: 50px;
+}
