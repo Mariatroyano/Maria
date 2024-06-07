@@ -128,15 +128,15 @@ margin: 8px;
 .remember{
     margin-top: 8px;
 }
-/* Estilos para dispositivos de tamaño grande */
+
 .menu-icon {
     display: none;
 }
 
-@media screen and (max-width: 768px) {
-    /* Estilos para dispositivos de tamaño pequeño */
-    .nav-links {
-        display: none;
+@media  (max-width: 7000px) {
+
+    .header nav {
+        
         flex-direction: column;
         align-items: center;
     }
