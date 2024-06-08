@@ -5,37 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- <> -->
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <button>Abrrir</button>
-    <button>Cerrar</button>
     <div class="bg-gradient">
         <header class="header">
-            <img class="logo" src="Netflix_2015_logo.svg"alt=""srcset="">
-            <img class="logo" src="Netflix_2015_logo.svg" alt="">
-            <div class="menu-icon" id="menu-icon">&#9776;</div>
-            <nav>
-                <a href="">Inicio</a>
-                <a href="">Series</a>
-                <a href="">Películas</a>
-                <a href="">Novedades</a>
-                <a href="">Mi Lista</a>
-            </nav>
+            <img class="logo" src="imagenes/Netflix_2015_logo.svg" alt="" srcset="">
+
+            <button id="abrir" class="abrir-Menu"><i class="bi bi-list"></i></button> <!-- <> -->
             
-            <button>
-                <a href="index2.html">Iniciar sesión</a>n
+
+            <nav class="nav" id="nav">
+
+                <button id="cerrar" class="cerrar-menu"><i class="bi bi-x-square-fill"></i></button><!-- <> -->
+
+                <ul class="nav-list"><!-- <> -->
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Series</a></li><!-- <> -->
+                    <li><a href="">Películas</a></li>
+                    <li><a href="">Novedades</a></li>
+                    <li><a href="">Mi Lista</a></li>
+                </ul>
+
+            </nav>
+            <button class="button2"><!-- <> -->
+            <a href="index2.html">Iniciar sesión</a>
             </button>
 
         </header>
         <main class="main">
             <div class="container">
-                <h1>Películas y series ilimitadas y mucho más.</h1>
+                <h2>Películas y series ilimitadas y mucho más.</h2>
                 <h3>Disfruta donde quieras, cancela cuando quieras.</h3>
                 <form action="/send-data">
                     <input type="email" placeholder="Email">
-                    <button type="submit">Comenzar</button>
+                    <button class="boton2" type="submit">Comenzar</button><!-- <> -->
                 </form>
             </div>
         </main>

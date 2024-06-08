@@ -1,78 +1,81 @@
-body{
+body {
     margin: 0;
-    background-image: url(./imagenes/neflix2.jpg);
+    background-image: url(imagenes/neflix2.jpg);
     font-family: Arial, sans-serif;
 }
 
-.bg-gradient{
-    background-image:linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+.bg-gradient {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
 }
 
-.header{
-    background-color: #141414;
+.header {
+    background-color: #050505;
     display: flex;
     justify-content: space-around;
     padding: 20px;
+    
 }
 
-.header nav{
+.nav {
     display: flex;
     align-items: center;
 }
 
-.header img{
+.header img {
     width: 100px;
 }
 
-.header nav a{
-    color: #fff;
+.header nav a {
+    color: #fcf9f9;
     text-decoration: none;
     margin-right: 20px;
 }
 
-.header button{
-    background-color: #d81f26;
+.button2 {
+    background-color: #d5212a;
     color: #fff;
-    border:none;
+    border: none;
     border-radius: 4px;
     cursor: pointer;
     padding: 10px;
 }
 
-
-.main{
+.main {
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
     height: 80vh;
-   
+
 }
 
-.main .container{
+.main .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 600px;
 }
-.main button{
-    background-color: #d81f28;
+
+.boton2 {
+    background-color: #b12626;
     color: azure;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     padding: 10px;
 
-}.main input{
+}
+
+.main input {
     padding: 10px;
     border: none;
     border-radius: 4px;
-    background-color: #f7f2f2;
+    background-color: #141414aa;
     justify-content: center
-
 }
-footer{
+
+footer {
     background-color: #141414;
     display: flex;
     align-items: center;
@@ -80,72 +83,120 @@ footer{
     color: #ffffff;
 
 }
-footer p a,a:visited,
+
+footer p a,
+a:visited,
 a:hover,
-a:link{
-text-decoration: none;
-color:#fcf6f6;
+a:link {
+    text-decoration: none;
+    color: #fcf6f6;
 
 }
-footer ul{
+
+footer ul {
     display: flex;
     list-style: none;
     justify-content: center;
-    flex-wrap:wrap ;
+    flex-wrap: wrap;
     max-width: 700px;
 }
-footer ul li{
-margin: 8px;
+
+footer ul li {
+    margin: 8px;
 }
-.form-container{
+
+.form-container {
     background-color: #141414;
     padding: 40px;
     border-radius: 10px;
     max-width: 40px;
 }
-.form-container form{
+
+.form-container form {
     display: flex;
     flex-direction: column;
 }
-.form-container form input{
+
+.form-container form input {
     margin-bottom: 9px;
     background-color: #ffffff10;
 }
-.form-container .btn-code{
+
+.form-container .btn-code {
     background-color: #141414d0;
 }
-.form-container form button{
+
+.form-container form button {
     margin-bottom: 8px;
 }
-.form-container form{
+
+.form-container form {
     display: flex;
     justify-content: center;
     width: 100px;
 }
-.text-align-center{
+
+.text-align-center {
     text-align: center;
 }
-.remember{
+
+.remember {
     margin-top: 8px;
 }
-
-.menu-icon {
+.abrir-Menu {
     display: none;
 }
+.cerrar-menu {
+    display: none;
+}
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: irem;
 
-@media  (max-width: 7000px) {
+}
+.nav-list li a {
+    text-decoration: none;
+    color: #d2c8c8;
+}
+@media screen and (max-width:550px) {
 
-    .header nav {
-        
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .menu-icon {
+    .abrir-Menu {
         display: block;
+        border: 0;
+        background: red;/*Color del boton*/
+        color: white; /*Color de las lineas*/
+    }
+    .cerrar-menu {
+        display: block;
+        border: 0;
+    }
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: irem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #060606;
+        padding: 2rem;
+    }
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav-list{
+        flex-direction: column;
+        align-items: end;
+        gap: 2rem;
+    }
+    .nav-list li a {
+        color: #d2c8c8;
     }
 
-    .header {
-        justify-content: space-between;
-    }
+
 }

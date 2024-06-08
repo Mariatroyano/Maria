@@ -1,14 +1,12 @@
+const nav = document.querySelector("#nav");
+const abrir = document.querySelector("#abrir");
+const cerrar = document.querySelector("#cerrar");
 
+abrir.addEventListener("click",()=>{//al darle cli abre el boton
+     nav.classList.add("visible");
+})
 
-document.addEventListener('DOMContentLoaded', () => {
-    const menuIcon = document.getElementById('menu-icon');
-    const navLinks = document.querySelector('.nav-links');
+cerrar.addEventListener("click",()=>{// al darle
+    nav.classList.remove("visible");
 
-    menuIcon.addEventListener('click', () => {
-        navLinks.classList.add('active');
-    })
-
-    nav-links.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-    })
-    });
+})
