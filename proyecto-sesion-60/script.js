@@ -10,3 +10,4 @@ cerrar.addEventListener("click",()=>{// al darle
     nav.classList.remove("visible");
 
 })
+//to permite agregar o quitar 
