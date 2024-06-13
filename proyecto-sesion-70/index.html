@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sctyle.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sistema De Comentarios</h1>
+        <h2>¡Has Un Comentario!</h2>
+
+        <form>
+            <label id="nombre" for="nombre">Nombre:</label>
+            <br>
+            <br>
+            <input class="input "   required id="nombre" type="text" placeholder="Escribe tu nombre"><br>
+            <br>
+            <label id="comentario"      for="">Comentario</label>
+            <br>
+            <textarea class="text"   id="comentario" name="comment" placeholder="Escribe tu comentario"></textarea>
+        </form>
+        <br>
+        <button class="button" id="button">Enviar comentario</button>
+
+    <h3>Comentarios</h3>
+    <div id="lista-datos"></div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
