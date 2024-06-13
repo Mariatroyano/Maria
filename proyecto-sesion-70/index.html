@@ -13,22 +13,19 @@
         <h1>Sistema De Comentarios</h1>
         <h2>¡Has Un Comentario!</h2>
 
-        <form>
-            <label id="nombre" for="nombre">Nombre:</label>
+        <form id="commentForm">
+            <label for="name">Nombre:</label>
             <br>
+            <input type="text" id="name" name="name" required><br>
             <br>
-            <input class="input "   required id="nombre" type="text" placeholder="Escribe tu nombre"><br>
+            <label id="comment">Comentario:</label>
             <br>
-            <label id="comentario"      for="">Comentario</label>
+            <textarea id="comment" name="comment" required></textarea>
             <br>
-            <textarea class="text"   id="comentario" name="comment" placeholder="Escribe tu comentario"></textarea>
+            <button type="sudmit">Enviar</button>
         </form>
-        <br>
-        <button class="button" id="button">Enviar comentario</button>
-
-    <h3>Comentarios</h3>
-    <div id="lista-datos"></div>
-
+        <h2>Comentarios</h2>
+        <div id="commentslist"></div>
     </div>
     <script src="script.js"></script>
 </body>
