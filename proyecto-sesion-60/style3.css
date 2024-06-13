@@ -100,7 +100,7 @@ align-items: end;
 }
 .image{/**/
     width: 200px;
-    height: 150px;
+    height: 150px ;
     display: flex;
     flex-direction: column; 
   object-fit: cover;
