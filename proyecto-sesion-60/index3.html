@@ -7,44 +7,48 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style3.css">
-</head><!--  -->
-<!--  -->
+</head>
+
 
 <body>
-    <div>
-
         <header class="header">
+
             <div class="encabezado">
                 <img src="imagenes/Netflix_2015_logo.svg" alt="" srcset="">
-                <nav class="nav">
+                <div>
+                    <button id="abrir" class="abrir-Menu"><i class="bi bi-list"></i></button> <!-- <> -->
 
-                    <ul class="nav">
-                        <a href="#">Home</a>
-                        <a href="#">TV Shown</a>
-                        <a href="#">Movies</a>
-                        <a href="#">New & Popular</a>
-                        <a href="#">My List</a>
-                    </ul>
+                    <nav class="nav" id="nav">
+
+                        <ul class="nav-list">
+                            <a href="#">Home</a>
+                            <a href="#">TV Shown</a>
+                            <a href="#">Movies</a>
+                            <a href="#">New & Popular</a>
+                            <a href="#">My List</a>
+                        </ul>
+                    
+
+                <div class="barra">
+
+                    <nav class="navv">
+                        <ul class="nav-list">
+                            <li><a href="#">kids</a></li>
+                        </ul>
+                    </nav>
+
+                    <img class="logito"
+                        src="https://i.pinimg.com/originals/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg" alt="">
+                    <button class="button"><i class="bi bi-caret-down-fill"></i></button>
                 </nav>
             </div>
 
+                    <button id="cerrar" class="cerrar-menu"><i class="bi bi-x-square-fill"></i></button><!-- <> -->
 
-            <div class="barra">
-                <button class="button"><i class="bi bi-search"></i></i></button>
-
-                <nav class="navv">
-                    <ul class="nav-list">
-                        <li><a href="#">kids</a></li>
-                    </ul>
-                </nav>
-
-                <button class="button"><i class="bi bi-bell-fill"></i></button>
-                <img class="logito" src="https://i.pinimg.com/originals/b2/a0/29/b2a029a6c2757e9d3a09265e3d07d49d.jpg"
-                    alt="">
-                <button class="button"><i class="bi bi-caret-down-fill"></i></button>
-
+                </div>
             </div>
         </header>
+ 
 
 
         <main>
@@ -61,7 +65,12 @@
             </div>
         </main>
 
-    </div>
+   
+
+
+    <button id="left">adelante</button>
+
+
 
     <h2 class="comentarios">Bingeworthy International Tv Shows</h2>
 
@@ -91,6 +100,9 @@
             <img src="imagenes/pelicula20.jpg" alt="">
         </div>
     </div>
+
+
+
 
     <h2 class="comentarios">Heat Packs for My Heart></h2>
 
@@ -124,6 +136,9 @@
         </div>
     </div>
 
+
+
+
     <h2 class="comentarios">Popular on Netflix</h2>
 
     <div class="imagen">
@@ -155,27 +170,11 @@
             <img src="imagenes/pelicula26.jpg" alt="">
         </div>
 
-
     </div>
     </div>
 
-
-
-    <div class="atras">
-        <button class="boton"><i class="bi bi-caret-left-fill"></i></button>
-    </div>
-
-    <div class="adelante">
-        <button><i class="bi bi-caret-right-fill"></i></button>
-
-    </div>
-
-
-
-
-
-
-
+    <button id="right">Atras</button>
+    <script src="script3.js"></script>
 </body>
 
 </html>
