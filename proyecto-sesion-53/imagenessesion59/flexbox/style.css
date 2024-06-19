@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(89, 158, 158);
+    margin: 20;
+    padding: 9;
+   
+}
+img{
+    width: 30%;
+    border-radius: 70;
+}
+.row{
+    display: flexbox;
+    padding: 5px;
+    border-radius: 70;
+}
+.imagen{
+    border-style: outset;
+}
+
