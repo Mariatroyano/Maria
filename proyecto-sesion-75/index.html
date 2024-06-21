@@ -12,7 +12,7 @@
 <script>
 
 function myFunction() {
-  let array = [1, 2, 3, 4, 5,6,7,8,9];
+  let array = [1, 2, 3, 4, 5, 6,7,8,9];
 
 
   const message = document.getElementById("mensage");
@@ -24,10 +24,10 @@ function myFunction() {
     if(indice.trim() == "")  throw "El campo estad vacio";
    if(isNaN(indice)) throw "No es un numero ";
     indice = Number(indice);
-    if(indice < 1 || indice > 10)   throw "El numero deve estar entre 1 y 10";
+    if(indice < 0 || indice > 10)   throw "El numero deve estar entre 1 y 10";
     if(indice > array.length)  throw "El indice esta fuera de los limites del array";
-    const elemento = array[indice -1];
-    message.innerHTML = "el elemento en el indice"+ indice+ "es"+ elemento;
+    const elemento = array[indice - 0];
+    message.innerHTML = "el elemento en el indice"+ " es "+ elemento;
   }
   catch(error) {
     message.innerHTML = "Error " + error;
