@@ -20,10 +20,10 @@ function addCommentTolist(comment){
 
     commentDiv.appendChild(commentAutor);
     commentDiv.appendChild(commenBody);
-    commentList.appendChild(commentDiv);
+    commentsList.appendChild(commentDiv);
 }
 
-fetch("https://jsonplaceholder.typicode.com/comments . ")
+fetch("https://jsonplaceholder.typicode.com/comments ")
 .then(response => response.json())
 .then(data => {
     data.forEach(comment => addCommentTolist(comment));

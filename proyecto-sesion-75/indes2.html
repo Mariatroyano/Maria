@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <h3>Ingresa Nombre de usuario para obtener información</h3>
+    <ul>
+    </ul>
+
+    <input id="buscar" type="buscador">
+    <button type="button" id="buscador">Click</button>
+    <p id="mensage"></p>
+
+
+    <script>
+        const miApi = "https://jsonplaceholder.typicode.com/users";
+
+        async function api() {
+            try {
+                const responder = await fetch(miApi);//await hace una peticion http y espera la respuesta
+                if (!responder.ok) throw new Error('Información Invalidad');
+                return await responder.json();
+                
+            } catch (error) {
+                document.getElementById("mensage").innerText = "Error al obtener los datos. Por favor, inténtelo de nuevo más tarde.";
+                console.error('Fetch error:', error);
+                return null;
+            }
+            finally {
+      document.getElementById("buscar").value = "";
+    }
+        }
+        document.getElementById("buscador").onclick = async function () {
+            const usuarios= await api();
+            if (!usuarios) return;
+
+            const buscar = document.getElementById("buscar").value.toLowerCase();//toLowerCase se utiliza para convertir la cadena de testo a minuscula
+            const usuario = usuarios.find(función => función.name.toLowerCase() === buscar);//find para q me encuentre el primer elemennto de algo en espesifico
+
+            document.getElementById("mensage").innerText = usuario ? 
+                `Usuario encontrado: ${usuario.name}, Email: ${usuario.email}` : 
+                "Usuario no encontrado.";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="style1.css">
+  
+<body>
+  
+<div class="principal">
+<p>Ingresa Un Numero :</p>
+
+<input id="demo" type="text">
+<button type="button" onclick="myFunction ()">Click</button>
+
+<p id="mensage"></p>
+
+
+
+
+<script >
+  function myFunction() {
+    let array = [1, 2, 3, 4, 5, 6,7,8,9];
+    
+    const message = document.getElementById("mensage");
+    message.innerHTML = "";
+    
+    let indice = document.getElementById("demo").value;
+    
+    try { 
+      if(indice.trim() == "")  throw "El campo estad vacio";
+     if(isNaN(indice)) throw "No es un numero ";
+      indice = Number(indice);
+      if(indice > array.length)  throw "El indice esta fuera de los limites del array agregue un numero mas  bajo";
+      const elemento = array[indice - 0];
+      message.innerHTML = "El elemento del indice es :" + elemento;
+    }
+    catch(error) {
+      message.innerHTML = "Error.. " + error;
+    }
+    finally {
+      document.getElementById("demo").value = "";
+    }
+  }
+</script>
+</div>
+</body>
+</html>
