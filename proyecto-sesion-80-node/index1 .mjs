@@ -2,7 +2,7 @@
 // console.log("este es mi primer programa de node js ")
 
 //index nuestro archivo principal
-const {suma, resta, obtenerInfoSistema, prendidoComputo} = require(`./funciones`)
+import { suma, resta, obtenerInfoSistema, prendidoComputo } from `./funciones`
 
 var sumaDeDosNumeros = suma(15,19)
 var restataDeDosNumeros = resta(29,9)
