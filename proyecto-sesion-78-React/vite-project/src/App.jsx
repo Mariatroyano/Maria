@@ -3,13 +3,35 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '../public/vite.svg'
 import ayte from '../public/ayte_1.svg'
 import './App.css'
-import './app2.css'
+import { Profiles } from './components/Profiles'
+
+
+
+function Profile() {
+
+  return (
+    <Profiles
+    nombre={"maria"}
+    />
+
+  );
+}
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      <div>
+        <h1>Mi Perfil</h1>
+        <Profile />
+        <Profile />
+        <Profile />
+        <h3>Holaaa muy buenos dias</h3>
+      </div>
+
+
+
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -20,7 +42,7 @@ function App() {
         <a href="#" target="_blank">
           <img src={ayte} className="logo ayte" alt="ayte logo" />
         </a>
-        
+
       </div>
       <h1>Vite + React</h1>
       <div className="card">
@@ -35,7 +57,12 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
     </>
-  )
-}
 
+
+
+  )
+
+}
 export default App
+
+
