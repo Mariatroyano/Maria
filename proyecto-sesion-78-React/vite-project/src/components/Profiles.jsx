@@ -1,20 +1,22 @@
-export const Profiles =({nombre}) => {
+import './Profiles.css'
 
-    return (
-      <>
-        <img
-          src="https://i.imgur.com/MK3eW3As.jpg"
-          alt="Katherine Johnson"
-        />
-        <p>{}</p>
-        <div>
-          <p>Telefono</p>
-          <p>Dirección</p>
-        </div>
-        <button>Ver Detalle</button>
-      </>
-  
-  
-    );
-  }
-//   export default Profile
+
+function Profiles  ({ Nombre, Imagen, Telefono, Edad, Direccion })  {
+  return (
+      <div className='card'>
+          <img
+          className='card-imagen'
+              src={Imagen}
+              alt={Nombre}
+          />
+          
+          <div className='card-content'>
+              <h3>{Nombre}</h3>
+              <p>Telefono:{Telefono}</p>
+              <p>Edad:{Edad}</p>
+              <p> Direccion:{ Direccion}</p>
+          </div>
+      </div>
+  )
+}
+export default Profiles
