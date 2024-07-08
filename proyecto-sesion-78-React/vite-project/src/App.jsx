@@ -3,8 +3,17 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '../public/vite.svg'
 import ayte from '../public/ayte_1.svg'
 import './App.css'
-import Profiles from './components/Profiles.jsx'
+import Profile from './assets/components/Profiles.jsx'
 
+
+function getRandomPerson(customArray){
+  const randomIndex = Math.floor(Math.random() * customArray.length)
+
+  return customArray[randomIndex]
+  }
+  function App() {
+    const [count, setCount] = useState(0)
+    const[persona,setPersona]= useState({});
 
   const sebastian = {
     nombre: 'Maria Del Mar',
@@ -49,34 +58,24 @@ import Profiles from './components/Profiles.jsx'
       Edad: 28
     },
     {
-      Nombre: 'Fabian',
+      Nombre: 'sebastian ',
       Imagen: 'https://static.vecteezy.com/system/resources/previews/019/012/852/non_2x/people-avatar-color-symbol-png.png',
       Direccion: 'La paz',
       Telefono: '3456789867',
       Edad: 26
     }
   ]
-
-  function App() {
-    const [count, setCount] = useState(0)
-    const[persona,setPersona]= useState("maria")
-
-    function getRandomPerson(customArray){
-      const randomIndex = Math.floor(Math.random() * customArray.length)
-      return customArray[randomIndex].Nombre
-      }
-
-
   return (
     <>
-      <div>
+      {/* <div>
         {
           studenst.map((styde) => <Profiles Nombre={styde.Nombre} Imagen={styde.Imagen} Telefono={styde.Telefono} Direccion={styde.Direccion} Edad={styde.Edad} />)
         }
         <h2>Nombre:{sebastian.nombre}</h2>
         <p>Apellido:{sebastian.apellido}</p>
         <p>Edad:{sebastian.edad}</p>
-      </div>
+      </div> */}
+
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -89,35 +88,31 @@ import Profiles from './components/Profiles.jsx'
         </a>
 
       </div>
-      <h1>Vite + React</h1>
+      <h1>Uso de UseState</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           incrementar
         </button>
-        <p>
-          EL valor del contador es: {count}
-        </p>
-      </div>
-      <div>
-        <button onClick={() => setCount((count) => count + -1)}>
+     
+        <button onClick={() => setCount((count) => count - 1)}>
           Decremetar
         </button>
-      </div>
-      <div>
+      
         <button onClick={() => setCount((count) => count - count)}>
           Restablecer
         </button>
-      </div>
-      <div>
+       <p>
+        EL VALOR DEL CONTADOR ES : {count}
+        </p> 
+        </div>
         <button onClick={() =>setPersona (getRandomPerson(studenst))}>
-          cambiar invitao
+          cambiar invitado
         </button>
-      </div>
-      <p>
-          EL valor del contador es: {persona}
+        <p >
+          La persona invitada es: {persona.Nombre}
         </p>
+        <Profile  Nombre={persona.Nombre}    Imagen={persona. Imagen}   Telefono={persona.Telefono} Edad={persona.Edad}  Direccion={persona.Direcion}/>
     </>
-
   )
 }
 

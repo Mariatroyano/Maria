@@ -3,7 +3,7 @@ import './Profiles.css'
 
 function Profiles  ({ Nombre, Imagen, Telefono, Edad, Direccion })  {
   return (
-      <div className='card'>
+      <div className='card-person'>
           <img
           className='card-imagen'
               src={Imagen}
