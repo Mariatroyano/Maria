@@ -30,7 +30,48 @@ files.forEach((item) =>{
                 console.log("Error al copiar al archivo: ${item}",err);
                 return;
             }
+            // if (Accion == "mover"){
+            //     fs.unlink(file,(err) => {
+            //         if 
+            //     })
+            // }
         })
     }
 })
+// const fs = require('fs');
+// const path = require('path');
+
+// // Directorio de entrada
+// const inputDir = path.join(__dirname, 'input_files');
+
+// // Leer los archivos del directorio de entrada
+// fs.readdir(inputDir, (err, files) => {
+//     if (err) {
+//         console.error('Error reading directory:', err);
+//         return;
+//     }
+
+//     // Procesar cada archivo
+//     files.forEach(file => {
+//         const ext = path.extname(file).substring(1); // Obtener la extensión del archivo
+//         const extDir = path.join(inputDir, `${ext}_files`); // Crear la carpeta de destino
+
+//         // Verificar si la carpeta de destino existe, si no, crearla
+//         if (!fs.existsSync(extDir)) {
+//             fs.mkdirSync(extDir);
+//         }
+
+//         // Mover el archivo a la carpeta correspondiente
+//         const oldPath = path.join(inputDir, file);
+//         const newPath = path.join(extDir, file);
+
+//         fs.rename(oldPath, newPath, err => {
+//             if (err) {
+//                 console.error('Error moving file:', err);
+//                 return;
+//             }
+//             console.log(`Archivo ${file} movido a ${extDir}`);
+//         });
+//     });
+// });
 
