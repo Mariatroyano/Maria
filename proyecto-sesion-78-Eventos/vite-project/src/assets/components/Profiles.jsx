@@ -1,6 +1,7 @@
 import './Profiles.css'
 
 
+
 function Profiles  ({ Nombre, Imagen, Telefono, Edad, Direccion })  {
   return (
       <div className='card-person'>
@@ -20,3 +21,4 @@ function Profiles  ({ Nombre, Imagen, Telefono, Edad, Direccion })  {
   )
 }
 export default Profiles
+
