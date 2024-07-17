@@ -1,7 +1,5 @@
 import './Profiles.css'
 
-
-
 function Profiles  ({ Nombre, Imagen, Telefono, Edad, Direccion })  {
   return (
       <div className='card-person'>
