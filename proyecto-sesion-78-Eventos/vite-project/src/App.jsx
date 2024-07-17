@@ -1,49 +1,43 @@
 import { useState } from 'react'
 import './App.css'
 import Profile from './assets/components/Profiles.jsx'
-import ListPeople from '../src/assets/ListPeople.jsx'; // Importa el componente ListPeople
+ import ListPeople from '../src/assets/ListPeople.jsx'; // Importa el componente ListPeople
 
+const studentsArray = [];
 
-const studentsArray = [
-  
-]
-function getRandomPerson(customArray){
-  const randomIndex = Math.floor(Math.random() * customArray.length)
-  return customArray[randomIndex]
-}
-export default function App() {
+function App() {
   const [persona, setPersona] = useState({})
   const [students, setStudents] = useState(studentsArray);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setPersona({ ...persona, [name]: value })
-  }
-
+    setPersona({ ...persona, [name]: value });
+  };8.
   const handleClick = (e) => {
-    e.preventDefault()
-    setStudents([...students, { ...persona }])
-     console.log([...students, { ...persona }])
-  }
+    e.preventDefault();
+    setStudents([...students, { ...persona }]);
+  };
 
   return (
     <>
       <h1>Manejo de eventos</h1>
-      <form>
-        
-        <input onChange={handleChange} type='text' name="Nombre" placeholder='Nombre Usuario'></input>
-        <input onChange={handleChange} type='text' name="Telefono" placeholder='Telefono'></input>
-        <input onChange={handleChange} type='text' name="Edad" placeholder='Edad'></input>
-        <input onChange={handleChange} type='text' name="Imagen" placeholder='Imagen'></input>
+       
+      <form action=''>
+
+        <input onChange={handleChange} type='text' name="Nombre" placeholder='Nombre Usuario' />
+        <input onChange={handleChange} type='text' name="Telefono" placeholder='Telefono' />
+        <input onChange={handleChange} type='text' name="Edad" placeholder='Edad' />
+        <input onChange={handleChange} type='text' name="Imagen" placeholder='Imagen' />
+        <input onChange={handleChange} type='text' name="Direccion" placeholder='Direccion' />
         <div>
-        <button type='button' onClick={handleClick}>Agregar</button>
-      
+          <button onClick={handleClick}>Agregar</button>
+
         </div>
       </form>
-
-      <ListPeople>
+      <div>
         {
-          studentsArray.map((student) => <Profile 
+          students.map((student, index) => <Profile
+            key={index}
             Nombre={student.Nombre}
             Imagen={student.Imagen}
             Telefono={student.Telefono}
@@ -51,12 +45,12 @@ export default function App() {
             Direccion={student.Direccion}
           />)
         }
-      </ListPeople>
+      </div>
     </>
-  )
+  );
 }
 
-
+export default App;
 
 
 
