@@ -18,7 +18,38 @@ async function main() {
     to: "afbravo.p5@gmail.com , maria2020troyano@gmail.com", // list of receivers
     subject: "Aqui va el asunto desde microsoft", // Subject line
     text: "En un diario personal se anotan sueños, mentiras, pensamientos y reflexiones, así como los hechos más importantes que se dan cada día. Utiliza formas de expresión coloquial y puede hacer uso de las modalidades de elocución narrativa, descriptiva,", // plain text body
-    html: "<b></b>", // html body
+    html: `<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lita De Tareas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="principal">
+        <header>
+            <h1>Mi Lista De Tareas</h1>
+        </header>
+        <main>
+
+            <form>
+                <textarea id="input" placeholder="Agregar Tarea" required></textarea>
+                <button type="sudmit" id="button">Agregar</button>
+            </form>
+
+            <ul id="ul">
+            
+            </ul>
+
+        </main>
+    </div>
+    <script src="script.js">script.js</script>
+</body>
+
+</html>`, // html body
   });
 
   console.log("Message sent: %s", info.messageId);
@@ -26,3 +57,4 @@ async function main() {
 }
 
 main().catch(console.error);
+
