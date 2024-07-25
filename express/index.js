@@ -20,7 +20,7 @@ app.get('/InfoGeneral', (req, res) => {
 });
 
 app.get('/Arquitectura', (req, res) => {
-  res.send(`CPU Architecture: ${cpuArchitecture}`);
+  res.send(`CPU Architecture: ${cpuArchitecture}`);//temprey
   const cpuArchitecture = os.arch();
   console.log(cpuArchitecture); // x64
 
@@ -35,7 +35,7 @@ app.get('/nombreSistema', (req, res) => {
 
 app.get('/TiempoSistema', (req, res) => {
   res.send(`Uptime: ${uptimeOS} seconds`);
-  const uptimeOS = os.uptime();
+  const uptimeOS = os.uptime();//rangos flotantes,cademas de caracteres o estrin 
   console.log(uptimeOS); // 95156
 
 });
