@@ -3,7 +3,7 @@
 const express = require('express');
 const os = require('os');
 const app = express();
-const port = 3000;
+const port = 4000;
 
 app.get('/InfoMemoria', (req, res) => {
     res.send(`Total memory: ${memoriatotal}`);
@@ -48,5 +48,5 @@ app.get('/Procesador', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`Escuchado ${port}`);
 });
