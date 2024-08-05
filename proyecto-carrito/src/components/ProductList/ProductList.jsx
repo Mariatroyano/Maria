@@ -3,6 +3,7 @@ import './ProductList.css'
 import { Product } from "../../product";
 
 export default function ProductList() {
+
   const products = Product.flat();
   return (
     <div className="products">
@@ -13,7 +14,7 @@ export default function ProductList() {
             <div>{product.title}</div>
             <div>{product.description}</div>
             <div>{product.price}</div>
-            <button>Agregar al carrito</button>
+            <button onClick={() =>addToCart}>Agregar al carrito</button>
           </li>
         ))}
       </ul>
