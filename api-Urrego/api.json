@@ -1,0 +1,18 @@
+[
+    {
+        "productos":[
+            {
+                "nombre":"Camiseta"
+            },
+            {
+                "nombre":"Pantalon"
+            },
+            {
+                "nombre":"Buso"
+            },
+            {
+                "nombre":"Blusa"
+            }
+        ]
+    }
+]
