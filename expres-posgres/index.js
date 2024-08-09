@@ -60,39 +60,39 @@ app.post("/users", async (req, res) => {
   }
 });
 // Actualizar un usuario
-// app.put("/users/:id", async (req, res) => {
-//   const { id } = req.params;
-//   const { name, email } = req.body;
-//   try {
-//     const user = await User.findByPk(id);
-//     if (user) {
-//       user.name = name;
-//       user.email = email;
-//       await user.save();
-//       res.json(user);
-//     } else {
-//       res.status(404).json({ error: "Usuario no encontrado" });
-//     }
-//   } catch (error) {
-//     res.status(400).json({ error: error.message });
-//   }
-// });
+app.put("/users/:id", async (req, res) => {
+  const { id } = req.params;
+  const { name, email } = req.body;
+  try {
+    const user = await User.findByPk(id);
+    if (user) {
+      user.name = name;
+      user.email = email;
+      await user.save();
+      res.json(user);
+    } else {
+      res.status(404).json({ error: "Usuario no encontrado" });
+    }
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+});
 
 // // Eliminar un usuario
-// app.delete("/users/:id", async (req, res) => {
-//   const { id } = req.params;
-//   try {
-//     const user = await User.findByPk(id);
-//     if (user) {
-//       await user.destroy();
-//       res.json({ message: "Usuario eliminado" });
-//     } else {
-//       res.status(404).json({ error: "Usuario no encontrado" });
-//     }
-//   } catch (error) {
-//     res.status(500).json({ error: error.message });
-//   }
-// });
+app.delete("/users/:id", async (req, res) => {
+  const { id } = req.params;
+  try {
+    const user = await User.findByPk(id);
+    if (user) {
+      await user.destroy();
+      res.json({ message: "Usuario eliminado" });
+    } else {
+      res.status(404).json({ error: "Usuario no encontrado" });
+    }
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
 // Iniciar el servidor en el puerto 3000
 
 
@@ -189,21 +189,21 @@ app.put("/cliente/:id", async (req, res) => {
   }
 });
 
-// // Eliminar un usuario
-// app.delete("/clientes/:id", async (req, res) => {
-//   const { id } = req.params;
-//   try {
-//     const user = await cliente.findByPk(id);
-//     if (user) {
-//       await user.destroy();
-//       res.json({ message: "Usuario eliminado" });
-//     } else {
-//       res.status(404).json({ error: "Usuario no encontrado" });
-//     }
-//   } catch (error) {
-//     res.status(500).json({ error: error.message });
-//   }
-// });
+// Eliminar un usuario
+app.delete("/clientes/:id", async (req, res) => {
+  const { id } = req.params;
+  try {
+    const user = await cliente.findByPk(id);
+    if (user) {
+      await user.destroy();
+      res.json({ message: "Usuario eliminado" });
+    } else {
+      res.status(404).json({ error: "Usuario no encontrado" });
+    }
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
 // Iniciar el servidor en el puerto 3000
 app.listen(9800, () => {
   console.log("Servidor ejecutándose en http://localhost:9800");
