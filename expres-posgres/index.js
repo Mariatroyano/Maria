@@ -7,7 +7,7 @@ const port = 3000;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const sequelize = new Sequelize("prueba", "maria", "12345678", {
+const sequelize = new Sequelize("crud-express", "troyano", "123456789", {
   host: "localhost",
   dialect: "postgres",
   logging: false,
@@ -15,7 +15,7 @@ const sequelize = new Sequelize("prueba", "maria", "12345678", {
 
 // Definir el modelo de datos para 'User'
 const User = sequelize.define(
-  "User",
+  "user",
   {
     name: {
       type: DataTypes.STRING,
