@@ -9,7 +9,7 @@ app.get('/InfoMemoria', (req, res) => {
     res.send(`Total memory: ${memoriatotal}`);
     console.log(memoriatotal);
 });
-
+///.............................
 app.get('/InfoGeneral', (req, res) => {
     const plataforma = os.platform();
     res.send(`Platform: ${plataforma}`);
